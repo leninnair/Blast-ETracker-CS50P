@@ -19,23 +19,26 @@ def add_dummy_transaction(transaction: tuple):
     # transaction tuple contains dummy values of date, type, category, amount, description.
     if len(transaction) != 5:
         raise IndexError("transaction length wrong.")
-    if not (transaction[0] or transaction[1] or transaction[2] or transaction[3]):
+    if not all(transaction[:4]):
         raise ValueError("Invalid date, type, category, or amount")
     try:
         amount = float(transaction[3])
     except ValueError:
-        return
+        raise ValueError("error in amount")
     if transaction[1] not in ("Income", "Expense"):
         raise ValueError("Invalid type")
         
     try:
         expenses.save_transaction(transaction) # Saves the transaction in the database.
+
     except Exception:
+        expenses.db.rollback()
         return
+    expenses.db.commit()
 
 def fetch_trans():
     transactions = expenses.data_generator()
-    print(transactions)
+    return transactions
 
 def delete_trans(amt): # Deletes all transactions of a particular value.
     try:
@@ -44,9 +47,6 @@ def delete_trans(amt): # Deletes all transactions of a particular value.
         expenses.db.rollback()
         return
     expenses.db.commit()
-
-
-
 
 
 if __name__ == "__main__":
