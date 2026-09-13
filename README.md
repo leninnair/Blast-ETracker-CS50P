@@ -78,18 +78,18 @@ Here are a few screenshots from the app.
 
 **Main Window**
 
-<img title="" src="file:///C:/Users/vjlen/AppData/Roaming/marktext/images/d16717e689d7f21ba2f6ee889ff42424f86b426e.png" alt="" data-align="inline" width="797" />
+![Main Window](static/screenshots/main-window.png)
 
 **Add transaction form**
 
-![](C:/Users/vjlen/AppData/Roaming/marktext/images/891110f5d8ee856d92d0c069ee7c7958944921bc.png)
+![Add transaction form](static/screenshots/add-transaction.png)
 
 **Transaction list**
 
-![](C:/Users/vjlen/AppData/Roaming/marktext/images/36edc768925433ea9e15a29c811c83cac34bd099.png)
+![Transaction list](static/screenshots/transaction-list.png)
 
 **Transaction summary**
 
-![](C:/Users/vjlen/AppData/Roaming/marktext/images/09aa387ba3f5e85a45063f4718a1f687506223f1.png)
+![Transaction summary](static/screenshots/transaction-summary.png)
 
-![](C:/Users/vjlen/AppData/Roaming/marktext/images/ea44c6d1cb3cab97481a9842951f5309cae34a80.png)
+![Transaction summary details](static/screenshots/transaction-summary-details.png)
