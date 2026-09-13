@@ -37,7 +37,7 @@ def add_dummy_transaction(transaction: tuple):
     expenses.db.commit()
 
 def fetch_trans():
-    transactions = expenses.data_generator()
+    transactions = expenses.data_generator() # Calls the function to generate data (yield)
     return transactions
 
 def delete_trans(amt): # Deletes all transactions of a particular value.
