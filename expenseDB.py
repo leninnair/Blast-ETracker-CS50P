@@ -9,7 +9,7 @@ class Expenses:
         if not os.path.exists(self.db_dir):
             os.mkdir(self.db_dir)
 
-        # Create the database file path safely.
+        # Create the database file path safely. Database name can be changed here.
         self.db_path = os.path.join(self.db_dir, "userdata.db")
         self.db = sqlite3.connect(self.db_path) # Opens the database
         self.cursor = self.db.cursor()
