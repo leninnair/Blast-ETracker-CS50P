@@ -1,0 +1,5 @@
+CTkDateEntry==0.1.2
+CTkMessagebox==2.7
+CTkMessagebox==2.7
+customtkinter==6.0.0
+Pillow==12.3.0
