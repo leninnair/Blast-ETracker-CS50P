@@ -7,7 +7,7 @@ from CTkMessagebox import CTkMessagebox
 from PIL import Image
 
 from expenseDB import Expenses
-
+##
 
 class Trans_Form(ctk.CTkFrame): # Transaction form class. 
     def __init__(self, parent:ctk.widget):
