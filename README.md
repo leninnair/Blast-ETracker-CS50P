@@ -1,6 +1,6 @@
 # BLAST! EXPENSE TRACKER (CS50 Python Project)
 
-#### Video Demo:  <URL HERE>
+#### Video Demo:  [Project Video (YouTube)](https://www.youtube.com/watch?v=BA1S3iPS8gQ)
 
 ## Description
 
